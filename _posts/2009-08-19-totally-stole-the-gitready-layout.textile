@@ -1,7 +1,0 @@
----
-layout: post
-title: starting out
-category: beginner
----
-
-I stole the gitready.com layout so I would have a starting point
