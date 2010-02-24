@@ -1,4 +1,8 @@
-## Relationship Math - For the Cynics and Geeks
+---
+layout: post
+title: Relationship Math - For the Cynics and Geeks
+category: ramble
+---
 
 ### Complete Me! The relationship formula.
 
