@@ -1,0 +1,2 @@
+SITE.output_dir = '..'
+task :default => :clean_build
