@@ -1,0 +1,25 @@
+--- 
+title: My First Post With Webby
+created_at: 2010-02-27 05:58:43.845462 -07:00
+blog_post:  true
+layout: article
+filter:
+  - markdown
+  - syntax
+---
+
+I am moving from SquareSpace to webby. SquareSpace had its good points but it just didn't give me the control I wanted. I will cover the good and bad of both SquareSpace and webby in a future post. For now I am going to use this post to play and get formatting right.
+
+I would like to be able to syntax highlight code like so:
+
+    ruby!
+    def foo
+      'bar'
+    end
+    
+This should be json though
+
+    json!
+    { "just": "an", "example": 42 }
+
+That should be pretty.

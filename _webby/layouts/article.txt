@@ -1,0 +1,17 @@
+---
+filter:
+  - haml
+layout: default
+---
+- content_for :sidebar do
+  .panel.reddit
+    %script{:type => 'text/javascript', :src => 'http://www.reddit.com/button.js?t=1'}
+
+.article
+  .heading
+    .twitter
+      %script{:type => 'text/javascript', :src => 'http://tweetmeme.com/i/scripts/button.js'}
+    %h2.title= link_to_page(@page)
+    %p.date &#8212 #{@page.created_at.strftime('%A, %B %e, %Y')}
+  .body
+    = @content

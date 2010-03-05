@@ -1,0 +1,52 @@
+---
+extension: html
+filter: haml
+---
+!!!
+
+%html
+  %head
+    %title= @page.title
+    %meta{:name => 'author', :content => @page.author}
+
+    %link{:rel => 'stylesheet', :href => '/css/coderay.css', :type =>'text/css'}
+    %link{:rel => 'stylesheet', :href => '/css/site.css', :type =>'text/css', :media => 'screen, projection'}
+    
+    :javascript
+      tweetmeme_service = 'ow.ly';
+  %body
+    #container
+      %a{:href => 'http://github.com/hexorx'}
+        %img{:style => 'position: absolute; top: 0; right: 0; border: 0;', :src => 'http://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png', :alt => 'Fork me on GitHub'}
+      #header
+        %h1.title
+          %a{:href => '/'} CrackerSnack
+      #main
+        #sidebar
+          = content_for :sidebar
+          .panel
+            %h3 Welcome
+            %p Over the years the internet has given a lot to me. I have learned much from the internets and have had many lolz along the way.
+            %p This is my attempt to give back and pass on some of what I have learned. Topics will range from Ruby to rants and include every geeky thing that pops into my head. Although my head can be a scary place I will try to keep things civil. :)
+            %p.signature &#8212 hexorx (Josh Robinson)
+          .panel
+            %ul.social
+              %li.twitter
+                %a{:href => 'http://www.twitter.com/JoshRobinson'} Twitter
+              %li.lastfm
+                %a{:href => 'http://www.last.fm/user/hexorx'} Last.fm
+              %li.facebook
+                %a{:href => 'http://www.facebook.com/hexorx'} Facebook
+              %li.vimeo
+                %a{:href => 'http://www.vimeo.com/hexorx'} Vimeo
+              %li.github
+                %a{:href => 'http://github.com/hexorx'} github
+
+        #content
+          = @content
+          = content_for :pagination
+
+
+
+      #footer
+        %p This website was created with <a href="http://webby.rubyforge.org">Webby</a>

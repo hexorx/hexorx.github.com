@@ -1,0 +1,20 @@
+=round-top
+  :-webkit-border-top-left-radius 5px
+  :-webkit-border-top-right-radius 5px
+  :-moz-border-radius-topleft 5px
+  :-moz-border-radius-topright 5px
+  
+=round-bottom
+  :-webkit-border-bottom-left-radius 5px
+  :-webkit-border-bottom-right-radius 5px
+  :-moz-border-radius-bottomleft 5px
+  :-moz-border-radius-bottomright 5px
+
+=round
+  +round-top
+  +round-bottom
+  
+=shadow(!horizontal_offset=7px,!vertical_offset=7px,!blur_radious=7px,!shadow_color=#666)
+  :-moz-box-shadow= !horizontal_offset !vertical_offset !blur_radious !shadow_color
+  :-webkit-box-shadow= !horizontal_offset !vertical_offset !blur_radious !shadow_color
+  :box-shadow= !horizontal_offset !vertical_offset !blur_radious !shadow_color
