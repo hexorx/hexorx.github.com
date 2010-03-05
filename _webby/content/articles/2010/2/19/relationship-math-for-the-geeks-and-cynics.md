@@ -1,7 +1,8 @@
 --- 
 title: Relationship Math - For the Cynics and Geeks
 created_at: 2010-02-19 14:06:40.000000 -06:00
-blog_post:  true
+blog_post: true
+layout: article
 filter:
   - markdown
   - syntax
