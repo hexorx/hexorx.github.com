@@ -84,7 +84,7 @@ body {
         background: white;
         margin-top: 10px;
         margin-bottom: 20px;
-        padding: 20px 20px 30px 20px; }
+        padding: 20px 20px 10px 20px; }
         #container #main #content .article .twitter {
           float: right; }
         #container #main #content .article .heading {
@@ -103,13 +103,22 @@ body {
           border-bottom: 1px solid #555544; }
           #container #main #content .article .body p + p, #container #main #content .article .summary p + p {
             text-indent: 1em; }
+          #container #main #content .article .body .reddit, #container #main #content .article .summary .reddit {
+            margin-bottom: 5px; }
         #container #main #content .article .permalink {
-          float: right;
-          margin: 5px; }
+          overflow: hidden;
+          display: inline-block;
+          margin-top: 5px; }
+          #container #main #content .article .permalink {
+            display: block; }
           #container #main #content .article .permalink a {
             color: inherit;
             text-decoration: inherit;
             cursor: inherit; }
+          #container #main #content .article .permalink .comment {
+            float: left; }
+          #container #main #content .article .permalink .read {
+            float: right; }
     #container #main #sidebar {
       display: inline;
       float: left;

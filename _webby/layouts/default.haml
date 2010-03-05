@@ -14,6 +14,7 @@ filter: haml
     
     :javascript
       tweetmeme_service = 'ow.ly';
+      disqus_developer = true;
   %body
     #container
       %a{:href => 'http://github.com/hexorx'}
@@ -23,7 +24,7 @@ filter: haml
           %a{:href => '/'} CrackerSnack
       #main
         #sidebar
-          = content_for :sidebar
+          ~ content_for :sidebar
           .panel
             %h3 Welcome
             %p Over the years the internet has given a lot to me. I have learned much from the internets and have had many lolz along the way.
@@ -41,12 +42,45 @@ filter: haml
                 %a{:href => 'http://www.vimeo.com/hexorx'} Vimeo
               %li.github
                 %a{:href => 'http://github.com/hexorx'} github
+          .panel
+            :javascript
+              <!--
+                google_ad_client = "pub-9907270959946618";
+                /* 160x600, created 2/21/10 */
+                google_ad_slot = "3529204579";
+                google_ad_width = 160;
+                google_ad_height = 600;
+              //-->
+
+            %script{:type => 'text/javascript', :src => 'http://pagead2.googlesyndication.com/pagead/show_ads.js'}
 
         #content
-          = @content
-          = content_for :pagination
+          ~ @content
+          ~ content_for :pagination
 
 
 
       #footer
         %p This website was created with <a href="http://webby.rubyforge.org">Webby</a>
+        
+  :javascript
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+  :javascript
+    try {
+      var pageTracker = _gat._getTracker("UA-13158751-1");
+      pageTracker._trackPageview();
+    } catch(err) {}
+    
+  :javascript
+    (function() {
+    	var links = document.getElementsByTagName('a');
+    	var query = '?';
+    	for(var i = 0; i < links.length; i++) {
+    	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+    		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    	}
+    	}
+    	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/crackersnack/get_num_replies.js' + query + '"></' + 'script>');
+    })();

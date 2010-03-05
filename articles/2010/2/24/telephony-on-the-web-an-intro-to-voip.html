@@ -8,6 +8,7 @@
     <script type='text/javascript'>
       //<![CDATA[
         tweetmeme_service = 'ow.ly';
+        disqus_developer = true;
       //]]>
     </script>
   </head>
@@ -23,9 +24,7 @@
       </div>
       <div id='main'>
         <div id='sidebar'>
-          <div class='panel reddit'>
-            <script src='http://www.reddit.com/button.js?t=1' type='text/javascript'></script>
-          </div>
+          
           <div class='panel'>
             <h3>Welcome</h3>
             <p>Over the years the internet has given a lot to me. I have learned much from the internets and have had many lolz along the way.</p>
@@ -50,6 +49,20 @@
                 <a href='http://github.com/hexorx'>github</a>
               </li>
             </ul>
+          </div>
+          <div class='panel'>
+            <script type='text/javascript'>
+              //<![CDATA[
+                <!--
+                  google_ad_client = "pub-9907270959946618";
+                  /* 160x600, created 2/21/10 */
+                  google_ad_slot = "3529204579";
+                  google_ad_width = 160;
+                  google_ad_height = 600;
+                //-->
+              //]]>
+            </script>
+            <script src='http://pagead2.googlesyndication.com/pagead/show_ads.js' type='text/javascript'></script>
           </div>
         </div>
         <div id='content'>
@@ -106,7 +119,20 @@
               <p>The switch is responsible for routing calls from one person to another and inserting all sorts of fun things in the middle. This is where we can plug in to control where a call goes or make an interactive system with prompts and live data and other coolness.</p>
               
               <p>In the next couple articles I will go into the different ways we can plug into these switches and make them do what we want using XML and our favorite tools for generating said XML.</p>
+              <div class='reddit'>
+                <script src='http://www.reddit.com/button.js?t=1' type='text/javascript'></script>
+              </div>
             </div>
+            <div id='disqus_thread'></div>
+            <script src='http://disqus.com/forums/crackersnack/embed.js' type='text/javascript'></script>
+            <noscript>
+              Please enable JavaScript to view the
+              <a href='http://disqus.com/?ref_noscript=crackersnack'>comments powered by Disqus.</a>
+            </noscript>
+            <a class='dsq-brlink' href='http://disqus.com'>
+              blog comments powered by
+              <span class='logo-disqus'>Disqus</span>
+            </a>
           </div>
           
         </div>
@@ -116,4 +142,32 @@
       </div>
     </div>
   </body>
+  <script type='text/javascript'>
+    //<![CDATA[
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    //]]>
+  </script>
+  <script type='text/javascript'>
+    //<![CDATA[
+      try {
+        var pageTracker = _gat._getTracker("UA-13158751-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    //]]>
+  </script>
+  <script type='text/javascript'>
+    //<![CDATA[
+      (function() {
+      	var links = document.getElementsByTagName('a');
+      	var query = '?';
+      	for(var i = 0; i < links.length; i++) {
+      	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+      		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+      	}
+      	}
+      	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/crackersnack/get_num_replies.js' + query + '"></' + 'script>');
+      })();
+    //]]>
+  </script>
 </html>

@@ -65,7 +65,7 @@ body
         :background white
         :margin-top 10px
         :margin-bottom 20px
-        :padding 20px 20px 30px 20px
+        :padding 20px 20px 10px 20px
         .twitter
           :float right
         .heading
@@ -80,13 +80,20 @@ body
             :margin 0
         .body, .summary
           :border-bottom 1px solid #555544
+
           p + p
             :text-indent 1em
+          .reddit
+            :margin-bottom 5px
         .permalink
-          :float right
-          :margin 5px
+          +clearfix
+          :margin-top 5px
           a
             +unstyled-link
+          .comment
+            :float left
+          .read
+            :float right
     #sidebar
       +grid(3)
       .panel

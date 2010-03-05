@@ -21,7 +21,9 @@ dirty:  true
         %p= p.summary
       - else
         = render(p)
-    .permalink= link_to("Full Article &#187", p)
+    .permalink
+      .comment= link_to("Comments", p, :anchor => 'disqus_thread')
+      .read= link_to("Full Article &#187", p)
 - content_for :pagination do
   .paginate
     %span{:class => "previous #{'disable' unless @pager.prev?}"}
