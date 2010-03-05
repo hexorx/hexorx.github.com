@@ -23,3 +23,5 @@ This should be json though
     { "just": "an", "example": 42 }
 
 That should be pretty.
+
+I found out something new about github pages. You only get custom domain support on a paid account. They start at $7/mo which is nothing for a service I use daily. So I guess it is time to upgrade.
