@@ -31,29 +31,22 @@ filter: haml
             %p This is my attempt to give back and pass on some of what I have learned. Topics will range from Ruby to rants and include every geeky thing that pops into my head. Although my head can be a scary place I will try to keep things civil. :)
             %p.signature &#8212 hexorx (Josh Robinson)
           .panel
+            %h3 I'm Social
             %ul.social
+              %li.github
+                %a{:href => 'http://github.com/hexorx'} github
               %li.twitter
                 %a{:href => 'http://www.twitter.com/JoshRobinson'} Twitter
-              %li.lastfm
-                %a{:href => 'http://www.last.fm/user/hexorx'} Last.fm
               %li.facebook
                 %a{:href => 'http://www.facebook.com/hexorx'} Facebook
               %li.vimeo
                 %a{:href => 'http://www.vimeo.com/hexorx'} Vimeo
-              %li.github
-                %a{:href => 'http://github.com/hexorx'} github
-          .panel
-            :javascript
-              <!--
-                google_ad_client = "pub-9907270959946618";
-                /* 160x600, created 2/21/10 */
-                google_ad_slot = "3529204579";
-                google_ad_width = 160;
-                google_ad_height = 600;
-              //-->
-
-            %script{:type => 'text/javascript', :src => 'http://pagead2.googlesyndication.com/pagead/show_ads.js'}
-
+              %li.tumblr
+                %a{:href => 'http://crackersnack.tumblr.com'} Tumblr
+              %li.posterous
+                %a{:href => 'http://crackersnack.posterous.com'} Posterous
+              %li.lastfm
+                %a{:href => 'http://www.last.fm/user/hexorx'} Last.fm
         #content
           ~ @content
           ~ content_for :pagination

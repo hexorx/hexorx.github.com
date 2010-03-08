@@ -157,15 +157,19 @@ body {
             cursor: inherit;
             text-align: center;
             padding-left: 25px; }
-          #container #main #sidebar .panel ul.social .twitter a {
-            background: url(/images/twitter.png) no-repeat; }
-          #container #main #sidebar .panel ul.social .lastfm a {
-            background: url(/images/lastfm.png) no-repeat; }
-          #container #main #sidebar .panel ul.social .facebook a {
-            background: url(/images/facebook.png) no-repeat; }
-          #container #main #sidebar .panel ul.social .vimeo a {
-            background: url(/images/vimeo.png) no-repeat; }
           #container #main #sidebar .panel ul.social .github a {
             background: url(http://github.com/favicon.png) no-repeat; }
+          #container #main #sidebar .panel ul.social .twitter a {
+            background: url(/images/twitter.png) no-repeat; }
+          #container #main #sidebar .panel ul.social .facebook a {
+            background: url(/images/facebook.png) no-repeat; }
+          #container #main #sidebar .panel ul.social .tumblr a {
+            background: url(/images/tumblr.gif) no-repeat; }
+          #container #main #sidebar .panel ul.social .posterous a {
+            background: url(/images/posterous.png) no-repeat; }
+          #container #main #sidebar .panel ul.social .vimeo a {
+            background: url(/images/vimeo.png) no-repeat; }
+          #container #main #sidebar .panel ul.social .lastfm a {
+            background: url(/images/lastfm.png) no-repeat; }
   #container #footer {
     color: #555544; }

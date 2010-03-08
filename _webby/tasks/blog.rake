@@ -33,7 +33,7 @@ namespace :blog do
     end
   end  # each
 
-  # this task is used to create the year index file (blog/2008/index.txt)
+  # this task is used to create the year index file (articles/2008/index.txt)
   task :create_year_index do |t|
     # parse out information about the page to create
     _, _, dir = Webby::Builder.new_page_info
@@ -46,7 +46,7 @@ namespace :blog do
 
     # determine the filename and template name
     fn = File.join(dir, 'index.txt')
-    tmpl = Dir.glob(File.join(Webby.site.template_dir, 'blog/year.*')).first.to_s
+    tmpl = Dir.glob(File.join(Webby.site.template_dir, 'articles/year.*')).first.to_s
 
     if test(?f, tmpl) and not test(?f, File.join(Webby.site.content_dir, fn))
       Webby::Builder.create(fn, :from => tmpl,
@@ -54,7 +54,7 @@ namespace :blog do
     end
   end
 
-  # this task is used to create the month index file (blog/2008/04/index.txt)
+  # this task is used to create the month index file (articles/2008/04/index.txt)
   task :create_month_index do |t|
     # parse out information about the page to create
     _, _, dir = Webby::Builder.new_page_info
@@ -69,7 +69,7 @@ namespace :blog do
 
     # determine the filename and template name
     fn = File.join(dir, 'index.txt')
-    tmpl = Dir.glob(File.join(Webby.site.template_dir, 'blog/month.*')).first.to_s
+    tmpl = Dir.glob(File.join(Webby.site.template_dir, 'articles/month.*')).first.to_s
 
     if test(?f, tmpl) and not test(?f, File.join(Webby.site.content_dir, fn))
       Webby::Builder.create(fn, :from => tmpl,
