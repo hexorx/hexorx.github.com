@@ -4,8 +4,6 @@ created_at: 2010-02-27 05:58:43.841270 -07:00
 filter:     haml
 dirty:      true
 ---
-%h2.title= h(@page.title)
-
 - articles = @pages.find(:all, :in_directory => @page.dir, :recursive => true, :sort_by => "created_at", :reverse => true, :blog_post => true)
 - articles.delete(@page)
 - paginate(articles, 10) do |article|

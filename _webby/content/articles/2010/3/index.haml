@@ -2,9 +2,6 @@
 filter: haml
 dirty: true
 ---
-
-%h2.title Articles by month - 3
-
 - articles = @pages.find(:all, :in_directory => @page.dir, :recursive => true, :sort_by => "created_at", :reverse => true, :blog_post => true)
 - articles.delete(@page)
 - paginate(articles, 10) do |article|
