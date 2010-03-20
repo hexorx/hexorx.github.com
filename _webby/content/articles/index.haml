@@ -6,24 +6,24 @@ filter: haml
 dirty:  true
 ---
 - prev = nil
-- posts = @pages.find(:all, :blog_post => true, :sort_by => :created_at, :reverse => true)
-- paginate(posts, 10) do |p|
+- articles = @pages.find(:all, :blog_post => true, :sort_by => :created_at, :reverse => true)
+- paginate(articles, 10) do |article|
   .article
-    - if prev != p.created_at.strftime('%Y%m%d')
-      - prev = p.created_at.strftime('%Y%m%d')
+    - if prev != article.created_at.strftime('%Y%m%d')
+      - prev = article.created_at.strftime('%Y%m%d')
     .heading
-      %h2.title= link_to_page(p)
-      %p.date &#8212 #{p.created_at.strftime('%A, %B %e, %Y')}
+      %h2.title= link_to_page(article)
+      %p.date &#8212 #{article.created_at.strftime('%A, %B %e, %Y')}
     .reddit
     .twitter
     .summary
-      - if p.summary
-        %p= p.summary
+      - if article.summary
+        %p= article.summary
       - else
-        = render(p)
+        = render(article)
     .permalink
-      .comment= link_to("Comments", p, :anchor => 'disqus_thread')
-      .read= link_to("Full Article &#187", p)
+      .comment= link_to("Comments", article, :anchor => 'disqus_thread')
+      .read= link_to("Full Article &#187", article)
 - content_for :pagination do
   .paginate
     %span{:class => "previous #{'disable' unless @pager.prev?}"}

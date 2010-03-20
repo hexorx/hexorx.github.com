@@ -1,9 +1,10 @@
----
-title:      2010 Articles
-created_at: 2010-02-27 05:58:43.841270 -07:00
-filter:     haml
+ ---
+title:      <%= title %>
+created_at: <%= Time.now.to_y %>
+filter:     erb
 dirty:      true
 ---
+
 %h2.title= h(@page.title)
 
 - articles = @pages.find(:all, :in_directory => @page.dir, :recursive => true, :sort_by => "created_at", :reverse => true, :blog_post => true)

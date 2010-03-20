@@ -1,6 +1,6 @@
 Loquacious.configuration_for(:webby) {
   desc "The default directory where new blog posts will be created."
-  blog_dir 'blog'
+  blog_dir 'articles'
 }
 
 namespace :blog do
@@ -46,7 +46,7 @@ namespace :blog do
 
     # determine the filename and template name
     fn = File.join(dir, 'index.txt')
-    tmpl = Dir.glob(File.join(Webby.site.template_dir, 'articles/year.*')).first.to_s
+    tmpl = Dir.glob(File.join(Webby.site.template_dir, 'blog/year.*')).first.to_s
 
     if test(?f, tmpl) and not test(?f, File.join(Webby.site.content_dir, fn))
       Webby::Builder.create(fn, :from => tmpl,
@@ -68,8 +68,8 @@ namespace :blog do
     dir = File.join(dir, "#{year}/#{month}")
 
     # determine the filename and template name
-    fn = File.join(dir, 'index.txt')
-    tmpl = Dir.glob(File.join(Webby.site.template_dir, 'articles/month.*')).first.to_s
+    fn = File.join(dir, 'index.haml')
+    tmpl = Dir.glob(File.join(Webby.site.template_dir, 'blog/month.*')).first.to_s
 
     if test(?f, tmpl) and not test(?f, File.join(Webby.site.content_dir, fn))
       Webby::Builder.create(fn, :from => tmpl,
