@@ -12,7 +12,7 @@ filter: haml
     %link{:rel => 'stylesheet', :href => '/css/coderay.css', :type =>'text/css'}
     %link{:rel => 'stylesheet', :href => '/css/site.css', :type =>'text/css', :media => 'screen, projection'}
 
-    %link{:rel => 'alternate', :title => 'Atom Feed for crackersnack.com', :href => '/feed/atom.xml', :type =>'application/atom+xml'}
+    %link{:rel => 'alternate', :title => 'FeedBurner for CrackerSnack.com', :href => 'http://feeds.feedburner.com/crackersnack', :type =>'application/atom+xml'}
     
     :javascript
       disqus_developer = false;
@@ -26,7 +26,7 @@ filter: haml
       #main
         #sidebar
           .feed-button
-            %a{:href => '/feed/atom.xml'} Subscribe
+            %a{:href => 'http://feeds.feedburner.com/crackersnack'} Subscribe
           
           ~ content_for :sidebar
           .panel
