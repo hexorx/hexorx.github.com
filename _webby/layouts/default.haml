@@ -11,6 +11,8 @@ filter: haml
 
     %link{:rel => 'stylesheet', :href => '/css/coderay.css', :type =>'text/css'}
     %link{:rel => 'stylesheet', :href => '/css/site.css', :type =>'text/css', :media => 'screen, projection'}
+
+    %link{:rel => 'alternate', :title => 'Atom Feed for crackersnack.com', :href => '/feed/atom.xml', :type =>'application/atom+xml'}
     
     :javascript
       disqus_developer = false;
@@ -23,6 +25,9 @@ filter: haml
           %a{:href => '/'} CrackerSnack
       #main
         #sidebar
+          .feed-button
+            %a{:href => '/feed/atom.xml'} Subscribe
+          
           ~ content_for :sidebar
           .panel
             %h3 Welcome
