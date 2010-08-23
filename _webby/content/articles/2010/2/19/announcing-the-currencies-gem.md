@@ -1,5 +1,9 @@
 --- 
 title: Announcing The Currencies Gem
+
+summary:
+  If you are tracking any kind of assets the currencies gem is for you. It contains every currency in the ISO 4217 standard and allows you to add your own as well. So if you decide to take sparkly buttons as a form of payment you can use currencies to display the shiny button unicode symbol ☼ (disclaimer: ☼ may not look like a shiny button to everyone.) when used with something like the money gem. Speaking of the money gem, currencies gives you an ExchangeBank that the money gem can use to convert from one currency to another. There are plans to have ExchangeRate provider plugin system. Right now the rates are either set manually or pulled from Yahoo Finance.
+
 created_at: 2010-02-19 14:06:40.000000 -06:00
 blog_post: true
 layout: article
