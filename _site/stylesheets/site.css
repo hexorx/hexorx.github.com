@@ -1,0 +1,295 @@
+/* line 11, ../_src/site.sass */
+body {
+  background: url(/images/bg.jpg);
+}
+
+/* line 14, ../_src/site.sass */
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+/* line 17, ../_src/site.sass */
+#container #header, #container #main, #container #footer {
+  display: inline;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 960px;
+}
+/* line 20, ../_src/site.sass */
+#container #header {
+  margin: 0;
+  padding: 0;
+  color: #555544;
+}
+/* line 24, ../_src/site.sass */
+#container #header .title {
+  padding: 0;
+  margin: 0;
+  font-size: 4em;
+}
+/* line 28, ../_src/site.sass */
+#container #header .title a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../Developer/.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/utilities/links/_unstyled-link.scss */
+#container #header .title a:active, #container #header .title a:focus {
+  outline: none;
+}
+/* line 31, ../_src/site.sass */
+#container #main {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: #666666 0 0 10px 0;
+  -webkit-box-shadow: #666666 0 0 10px 0;
+  -o-box-shadow: #666666 0 0 10px 0;
+  box-shadow: #666666 0 0 10px 0;
+  background: #222211;
+  color: #222211;
+}
+/* line 36, ../_src/site.sass */
+#container #main #content {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 700px;
+}
+/* line 38, ../_src/site.sass */
+#container #main #content .paginate {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  *zoom: 1;
+  background: white;
+  padding: 5px;
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+}
+/* line 45, ../_src/site.sass */
+#container #main #content .paginate a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../Developer/.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/utilities/links/_unstyled-link.scss */
+#container #main #content .paginate a:active, #container #main #content .paginate a:focus {
+  outline: none;
+}
+/* line 47, ../_src/site.sass */
+#container #main #content .paginate .previous {
+  float: left;
+  margin-left: 275px;
+}
+/* line 50, ../_src/site.sass */
+#container #main #content .paginate .next {
+  float: right;
+  margin-right: 275px;
+}
+/* line 53, ../_src/site.sass */
+#container #main #content .paginate .disable {
+  color: #888888;
+}
+/* line 55, ../_src/site.sass */
+#container #main #content .article {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px 20px 10px 20px;
+}
+/* line 61, ../_src/site.sass */
+#container #main #content .article .twitter {
+  float: right;
+}
+/* line 63, ../_src/site.sass */
+#container #main #content .article .heading {
+  margin-bottom: 30px;
+}
+/* line 65, ../_src/site.sass */
+#container #main #content .article .heading a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../Developer/.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/utilities/links/_unstyled-link.scss */
+#container #main #content .article .heading a:active, #container #main #content .article .heading a:focus {
+  outline: none;
+}
+/* line 67, ../_src/site.sass */
+#container #main #content .article .heading .title {
+  margin: 0;
+}
+/* line 69, ../_src/site.sass */
+#container #main #content .article .heading .date {
+  color: #555544;
+  font-size: 0.9em;
+  margin: 0;
+}
+/* line 73, ../_src/site.sass */
+#container #main #content .article .body, #container #main #content .article .summary {
+  border-bottom: 1px solid #555544;
+}
+/* line 76, ../_src/site.sass */
+#container #main #content .article .body p + p, #container #main #content .article .summary p + p {
+  text-indent: 1em;
+}
+/* line 78, ../_src/site.sass */
+#container #main #content .article .body .reddit, #container #main #content .article .summary .reddit {
+  margin-bottom: 5px;
+}
+/* line 80, ../_src/site.sass */
+#container #main #content .article .permalink {
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 5px;
+}
+/* line 83, ../_src/site.sass */
+#container #main #content .article .permalink a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../Developer/.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/utilities/links/_unstyled-link.scss */
+#container #main #content .article .permalink a:active, #container #main #content .article .permalink a:focus {
+  outline: none;
+}
+/* line 85, ../_src/site.sass */
+#container #main #content .article .permalink .comment {
+  float: left;
+}
+/* line 87, ../_src/site.sass */
+#container #main #content .article .permalink .read {
+  float: right;
+}
+/* line 89, ../_src/site.sass */
+#container #main #sidebar {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+}
+/* line 91, ../_src/site.sass */
+#container #main #sidebar .feed-button {
+  margin-top: 10px;
+}
+/* line 93, ../_src/site.sass */
+#container #main #sidebar .feed-button a {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 10px 15px 10px 50px;
+  background: white url(/images/feed-icon.png) no-repeat 10px 50%;
+}
+/* line 6, ../../../../Developer/.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/utilities/links/_unstyled-link.scss */
+#container #main #sidebar .feed-button a:active, #container #main #sidebar .feed-button a:focus {
+  outline: none;
+}
+/* line 102, ../_src/site.sass */
+#container #main #sidebar .panel {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+}
+/* line 107, ../_src/site.sass */
+#container #main #sidebar .panel h3 {
+  margin: 0;
+}
+/* line 109, ../_src/site.sass */
+#container #main #sidebar .panel p {
+  font-size: 0.9em;
+}
+/* line 111, ../_src/site.sass */
+#container #main #sidebar .panel p + p {
+  text-indent: 0.75em;
+}
+/* line 113, ../_src/site.sass */
+#container #main #sidebar .panel p.signature {
+  text-indent: 0;
+}
+/* line 116, ../_src/site.sass */
+#container #main #sidebar .panel ul.social {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+}
+/* line 120, ../_src/site.sass */
+#container #main #sidebar .panel ul.social li {
+  margin: 5px 0 3px 0;
+}
+/* line 122, ../_src/site.sass */
+#container #main #sidebar .panel ul.social a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  text-align: center;
+  padding-left: 25px;
+}
+/* line 6, ../../../../Developer/.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/utilities/links/_unstyled-link.scss */
+#container #main #sidebar .panel ul.social a:active, #container #main #sidebar .panel ul.social a:focus {
+  outline: none;
+}
+/* line 127, ../_src/site.sass */
+#container #main #sidebar .panel ul.social .github a {
+  background: url(http://github.com/favicon.png) no-repeat;
+}
+/* line 129, ../_src/site.sass */
+#container #main #sidebar .panel ul.social .twitter a {
+  background: url(/images/twitter.png) no-repeat;
+}
+/* line 131, ../_src/site.sass */
+#container #main #sidebar .panel ul.social .facebook a {
+  background: url(/images/facebook.png) no-repeat;
+}
+/* line 133, ../_src/site.sass */
+#container #main #sidebar .panel ul.social .tumblr a {
+  background: url(/images/tumblr.gif) no-repeat;
+}
+/* line 135, ../_src/site.sass */
+#container #main #sidebar .panel ul.social .posterous a {
+  background: url(/images/posterous.png) no-repeat;
+}
+/* line 137, ../_src/site.sass */
+#container #main #sidebar .panel ul.social .vimeo a {
+  background: url(/images/vimeo.png) no-repeat;
+}
+/* line 139, ../_src/site.sass */
+#container #main #sidebar .panel ul.social .lastfm a {
+  background: url(/images/lastfm.png) no-repeat;
+}
+/* line 142, ../_src/site.sass */
+#container #footer {
+  color: #555544;
+}
