@@ -1,0 +1,36 @@
+---
+title:     CrackerSnack
+subtitle:  tasty tidbits of tech
+site:      crackersnack.com
+author:    Josh Robinson
+email:     crackersnackblog@gmail.com
+
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://{{ page.site }}/</id>
+
+  <title>{{ page.title }}</title>
+  <subtitle>{{ page.subtitle }}</subtitle>
+    
+  <author>
+    <name>{{ page.author }}</name>
+    <email>{{ page.email }}</email>
+  </author>
+
+  <link href="http://{{@page.site}}/feed/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="http://{{@page.site}}/" rel="alternate" type="text/html"/>
+
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+    
+  {% for post in site.posts %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="{{ page.site }}{{ post.url }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>{{ page.site }}{{ post.id }}</id>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+</feed>

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% for post in site.posts limit:4 %}
+  <div class='article'>
+    <div class='heading'>
+      <h2 class='title'><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class='date'>&#8212 {{post.date | date: "%A, %B %e, %Y"}}</p>
+    </div>
+    <div class='reddit'></div>
+    <div class='twitter'></div>
+    <div class='summary'>
+      <p>{{ post.summary }}</p>
+    </div>
+    <div class='permalink'>
+      <div class='comment'><a href="/articles/2010/3/30/teliax-needs-another-dev.html#disqus_thread">Comments</a></div>
+      <div class='read'><a href="/articles/2010/3/30/teliax-needs-another-dev.html">Full Article &#187</a></div>
+    </div>
+  </div>
+{% endfor %}

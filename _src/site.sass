@@ -1,15 +1,7 @@
----
-filter: sass
-extension: css
-layout: nil
----
-
 @import compass
 @import compass/utilities
 
 @import 960/grid
-
-@import helpers
 
 !ninesixty_columns = 12
 
@@ -37,14 +29,14 @@ body
         +unstyled-link
     
   #main
-    +round
-    +shadow(#666,0,0,10px)
+    +border-radius
+    +box-shadow(#666,0,0,10px)
     :background #222211
     :color #222211
     #content
       +grid(9)
       .paginate
-        +round
+        +border-radius
         +clearfix
         :background white
         :padding 5px
@@ -61,7 +53,7 @@ body
         .disable
           :color #888
       .article
-        +round
+        +border-radius
         :background white
         :margin-top 10px
         :margin-bottom 20px
@@ -99,7 +91,7 @@ body
       .feed-button
         :margin-top 10px
         a
-          +round
+          +border-radius
           +unstyled-link
           :font-size 1.2em
           :font-weight bold
@@ -108,7 +100,7 @@ body
           :background white url(/images/feed-icon.png) no-repeat 10px 50%
 
       .panel
-        +round
+        +border-radius
         :background white
         :margin 10px 0 10px 0
         :padding 10px
