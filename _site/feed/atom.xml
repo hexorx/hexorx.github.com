@@ -13,7 +13,7 @@
   <link href="http://crackersnack.com/feed/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="http://crackersnack.com/" rel="alternate" type="text/html"/>
 
-  <updated>2010-09-02T23:48:55-06:00</updated>
+  <updated>2010-09-02T23:55:13-06:00</updated>
     
   
   <entry>
@@ -163,11 +163,12 @@
 &lt;p&gt;Who are seeing these days? No one? Oh, it&amp;#8217;s ok. You will find someone. Eventually &amp;#8230;&lt;/p&gt;
 
 &lt;p&gt;Yeah. We have all had that conversation with someone. Movies, music, friends, relatives &amp;#8230; they all tell us the same thing. You just aren&amp;#8217;t complete without your other half. A single person is just someone who hasn&amp;#8217;t found someone yet. Lets put this into a simple formula to try and make sense of things.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;me = half
-you = half
-you + me = 1 complete relationship&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='ruby'&gt;  &lt;span class='n'&gt;me&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;half&lt;/span&gt;
+  &lt;span class='n'&gt;you&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;half&lt;/span&gt;
+  &lt;span class='n'&gt;you&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='n'&gt;me&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt; &lt;span class='n'&gt;complete&lt;/span&gt; &lt;span class='n'&gt;relationship&lt;/span&gt;
+  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 &lt;p&gt;Of course! That is it. You can see this formula everywhere you see a relationship. In order to be complete we need to find our matching half. The other person to complete us.&lt;/p&gt;
 
 &lt;h3 id='it_just_doesnt_add_up'&gt;It just doesn&amp;#8217;t add up.&lt;/h3&gt;

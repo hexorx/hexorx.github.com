@@ -15,10 +15,11 @@ Who are seeing these days? No one? Oh, it's ok. You will find someone. Eventuall
 
 Yeah. We have all had that conversation with someone. Movies, music, friends, relatives ... they all tell us the same thing. You just aren't complete without your other half. A single person is just someone who hasn't found someone yet. Lets put this into a simple formula to try and make sense of things.
 
-    
-    me = half
-    you = half
-    you + me = 1 complete relationship
+  {% highlight ruby %}
+  me = half
+  you = half
+  you + me = 1 complete relationship
+  {% endhighlight %}
 
 Of course! That is it. You can see this formula everywhere you see a relationship. In order to be complete we need to find our matching half. The other person to complete us.
 
