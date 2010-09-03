@@ -1,15 +1,12 @@
 --- 
+
+layout: article
+
 title: Relationship Math - For the Cynics and Geeks
 
 summary:
   Who are seeing these days? No one? Oh, it's ok. You will find someone. Eventually ...
 
-created_at: 2010-02-19 14:06:40.000000 -06:00
-blog_post: true
-layout: article
-filter:
-  - markdown
-  - syntax
 ---
 
 ### Complete Me! The relationship formula.
