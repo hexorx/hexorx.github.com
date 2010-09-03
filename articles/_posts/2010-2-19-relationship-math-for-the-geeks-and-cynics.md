@@ -15,7 +15,7 @@ Who are seeing these days? No one? Oh, it's ok. You will find someone. Eventuall
 
 Yeah. We have all had that conversation with someone. Movies, music, friends, relatives ... they all tell us the same thing. You just aren't complete without your other half. A single person is just someone who hasn't found someone yet. Lets put this into a simple formula to try and make sense of things.
 
-    ruby!
+    
     me = half
     you = half
     you + me = 1 complete relationship
@@ -44,35 +44,39 @@ So what does our new formula show us? Well lets look at a couple examples of ...
 
 First we have two whole people. They are both ones. Complete and competent.
 
-    ruby!
-    you = 1 person
-    me = 1 person
-    you * me = 1 relationship
+  {% highlight ruby %}
+  you = 1 person
+  me = 1 person
+  you * me = 1 relationship
+  {% endhighlight %}
     
 Well that is nice. A complete healthy relationship. But it took two complete people to make that complete relationship. Hmmmmmm. What happens when one of the people is half a person like in the standard formula?
 
-    ruby!
-    you = 1 person
-    me = .5 person
-    you * me = .5 relationship
+  {% highlight ruby %}
+  you = 1 person
+  me = .5 person
+  you * me = .5 relationship
+  {% endhighlight %}
     
 Oh! Thats not good at all. Our relationship is wanting. I just brought you down. Together we are less than when we started. that kinda makes me sad :(
 
 What happens if we are both incomplete and looking for someone to complete us?
 
-    ruby!
-    you = .5 person
-    me = .5 person
-    you * me = .25 relationship
+  {% highlight ruby %}
+  you = .5 person
+  me = .5 person
+  you * me = .25 relationship
+  {% endhighlight %}
 
 Well Crap! This is just getting worse. You have two incomplete people they don't make a complete relationship! They make a super bad sad relationship. The kind you don't like to hear about but do way to often.
 
 Can there be the idolized great relationship where everyone comes out better because of it? Well lets look at what happens when you have two one plusses.
 
-    ruby!
-    you = 1.5 person
-    me = 1.5 person
-    you * me = 2.25 relationship
+  {% highlight ruby %}
+  you = 1.5 person
+  me = 1.5 person
+  you * me = 2.25 relationship
+  {% endhighlight %}
     
 Now that I like. We are both better off. We complement each other instead of completing. And that is key. We have to be one plus to have anything to add to a relationship. If we are incomplete we drag the other person down.
 
